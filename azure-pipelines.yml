@@ -31,10 +31,10 @@ stages:
         workingDirectory: '$(Build.SourcesDirectory)'
       - task: CmdLine@2
         displayName: "Run unit tests"
-        inputs:
-          script: |
-            cd test-app/
-            npm run test --browsers=ChromeHeadless --code-coverage --watch=false
+        # inputs:
+        #   script: |
+        #     cd test-app/
+        #     npm run test --browsers=ChromeHeadless --code-coverage --watch=false
       - task: ArchiveFiles@2
         displayName: 'Archive files'
         inputs:

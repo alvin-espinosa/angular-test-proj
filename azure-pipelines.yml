@@ -13,7 +13,7 @@ pool:
 steps:
   - script: |
       npm install
-      npm run build-prod
+      npm run build
     displayName: 'build angular app'
 
   - task: PublishBuildArtifacts@1
